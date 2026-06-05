@@ -29,10 +29,16 @@
   box-sizing: border-box;
 
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  font-family: "Playfair Display", serif; /* ou Lato*/
+  font-family: "Lato", sans-serif; /* ou Playfair Display*/
   background-color: var(--bg-card);
   color: var(--texto-branco);
 }
@@ -47,6 +53,7 @@ h1 {
   text-align: center;
   justify-self: center;
   line-height: 35px;
+  font-family: "Playfair Display", serif;
 }
 
 .love {
@@ -56,7 +63,6 @@ h1 {
 
 .subtitle-hero {
   text-align: center;
-  font-family: "Lato", sans-serif;
   font-size: 0.6rem;
   color: var(--texto-cinza-medio);
   letter-spacing: 2px;
@@ -92,7 +98,6 @@ h1 {
 }
 
 .number-counter{
-    font-family: "Lato";
     color: var(--vermelho-vivo);
     font-size: 1.5rem;
     text-align: center;
@@ -106,7 +111,6 @@ h1 {
 
 .menu li {
     padding: 10px 10px;
-    /* border-bottom: 1px solid var(--vermelho-principal); */
     flex-grow: 1;
     text-align: center;
 }
@@ -116,6 +120,75 @@ h1 {
     text-decoration: none;
     font-size: .7rem;
     letter-spacing: 1px;
-    font-family: "Lato";
 }
 
+/* ------------------------------------ carta de amor ------------------------------------ */
+
+h2 {
+    margin: 30px 20px;
+    font-size: .8rem;
+    letter-spacing: 4px;
+    color: var(--texto-cinza-medio);
+    font-weight: 400;
+}
+
+.container-letter {
+    background-color: var(--bg-principal);
+    border: solid 1px var(--bg-carta);
+    border-radius: 10px;
+    padding: 10px;
+    width: 85%;
+    justify-self: center;
+    color: var(--texto-cinza-claro);
+}
+
+.text-letter {
+    text-wrap: wrap;
+    margin: 20px 15px;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.name-letter {
+    text-align: end;
+    margin: 20px 15px;
+    color: var(--texto-cinza-medio);
+}
+
+.name{
+    color: var(--acento-coracao);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+hr {
+    width: 80%;
+    margin: 40px;
+    justify-self: center;
+    border: none;
+    border-top: solid 1px var(--vermelho-escuro);
+    position: relative
+}
+
+
+/* ------------------------------------ fotos ------------------------------------ */
+
+.container-photos {
+    height: fit-content;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-photos img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.container-photos .seta {
+    width: 15px;
+    height: 30px;
+    filter: invert(70%);
+}
