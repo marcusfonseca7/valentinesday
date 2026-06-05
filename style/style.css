@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Lato:wght@300;400&display=swap');
+
+:root {
+  /* fundos */
+  --bg-principal: #0D0D0D;
+  --bg-card: #1A1A1A;
+  --bg-carta: #1F1010;
+ 
+  /* vermelhos / destaques */
+  --vermelho-principal: #C0392B;
+  --vermelho-vivo: #E74C3C;
+  --vermelho-escuro: #8B1A1A;
+ 
+  /* textos */
+  --texto-branco: #FFFFFF;
+  --texto-branco-suave: #E0E0E0;
+  --texto-cinza-medio: #9E9E9E;
+  --texto-cinza-claro: #B0B0B0;
+ 
+  /* acentos */
+  --acento-coracao: #E74C3C;
+  --borda-card-timeline: #4A1010;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif /* ou Lato*/
+}
+
+/* ------------------------------------ hero ------------------------------------ */
