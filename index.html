@@ -11,40 +11,41 @@
     <header></header>
 
     <main>
-      <h1>Meu amor</h1>
+      <h1>Meu <span class="love">amor</span>, eu te amo</h1>
 
-      <p>12 de Junho - Dia dos Namorados</p>
+      <p class="subtitle-hero">12 DE JUNHO - DIA DOS NAMORADOS</p>
 
       <div class="container-counter">
-        <div class="counter-days">
-          <p id="days"></p>
+        <div class="counter days">
+          <p class="number-counter" id="days">730</p>
           <p class="text-counter">Dias</p>
         </div>
 
-        <div class="counter-months">
-          <p id="months"></p>
+        <div class="counter months">
+          <p class="number-counter" id="months">24</p>
           <p class="text-counter">Meses</p>
         </div>
 
-        <div class="counter-years">
-          <p id="years"></p>
+        <div class="counter years">
+          <p class="number-counter" id="years">2</p>
           <p class="text-counter">Anos</p>
         </div>
       </div>
 
       <nav>
-        <ul>
-          <li><a href="#letter">Carta</a></li>
-          <li><a href="#photos">Fotos</a></li>
-          <li><a href="#moments">Momentos</a></li>
-          <li><a href="#playlist">Playlist</a></li>
+        <ul class="menu">
+          <li id="1" onclick="borderColor()"><a id="text-menu" href="#letter">CARTA</a></li>
+          <li><a href="#photos">FOTOS</a></li>
+          <li><a href="#moments">MOMENTOS</a></li>
+          <li><a href="#playlist">PLAYLIST</a></li>
         </ul>
       </nav>
 
-      <hr>
       
     </main>
 
     <footer></footer>
+
+    <script src="script/script.js"></script>
   </body>
 </html>

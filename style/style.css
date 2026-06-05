@@ -1,36 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Lato:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Lato:wght@300;400&display=swap");
 
 :root {
   /* fundos */
-  --bg-principal: #0D0D0D;
-  --bg-card: #1A1A1A;
-  --bg-carta: #1F1010;
- 
+  --bg-principal: #0d0d0d;
+  --bg-card: #111111;
+  --bg-carta: #1f1010;
+
   /* vermelhos / destaques */
-  --vermelho-principal: #C0392B;
-  --vermelho-vivo: #E74C3C;
-  --vermelho-escuro: #8B1A1A;
- 
+  --vermelho-principal: #c0392b;
+  --vermelho-vivo: #e74c3c;
+  --vermelho-escuro: #8b1a1a;
+
   /* textos */
-  --texto-branco: #FFFFFF;
-  --texto-branco-suave: #E0E0E0;
-  --texto-cinza-medio: #9E9E9E;
-  --texto-cinza-claro: #B0B0B0;
- 
+  --texto-branco: #ffffff;
+  --texto-branco-suave: #e0e0e0;
+  --texto-cinza-claro: #b0b0b0;
+  --texto-cinza-medio: #858585;
+
   /* acentos */
-  --acento-coracao: #E74C3C;
-  --borda-card-timeline: #4A1010;
+  --acento-coracao: #e74c3c;
+  --borda-card-timeline: #4a1010;
 }
 
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    font-family: "Playfair Display", serif /* ou Lato*/
+  font-family: "Playfair Display", serif; /* ou Lato*/
+  background-color: var(--bg-card);
+  color: var(--texto-branco);
 }
 
 /* ------------------------------------ hero ------------------------------------ */
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  line-height: 35px;
+}
+
+.love {
+  color: var(--vermelho-principal);
+  font-weight: 600;
+}
+
+.subtitle-hero {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 0.6rem;
+  color: var(--texto-cinza-medio);
+  letter-spacing: 2px;
+}
+
+.container-counter{
+    display: flex;
+    flex-direction: row;
+    justify-self:center;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: var(--borda-card-timeline) solid 1px;
+    background-color: var(--bg-principal);
+}
+
+.counter {
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter.months {
+    border-left: 1px solid var(--borda-card-timeline);
+    border-right: 1px solid var(--borda-card-timeline);
+}
+
+.text-counter {
+    font-size: .7rem;
+    color: var(--texto-cinza-medio);
+}
+
+.number-counter{
+    font-family: "Lato";
+    color: var(--vermelho-vivo);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.menu {
+    min-width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    padding: 10px 10px;
+    /* border-bottom: 1px solid var(--vermelho-principal); */
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu a {
+    color: var(--texto-cinza-medio);
+    text-decoration: none;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    font-family: "Lato";
+}
+
