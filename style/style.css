@@ -245,21 +245,21 @@ hr {
 /* ------------------------------------ rodapé ------------------------------------ */
 
 footer {
-    height: 70px;
+  height: 70px;
 }
 
 h3 {
-    width: 60%;
-    justify-self: center;
-    color: var(--texto-cinza-medio);
-    font-size: .8rem;
-    text-align: center;
-    font-weight: 400;
-    font-family: "Fairplay Display";
-    font-style: italic;
-    letter-spacing: 1px;
+  width: 60%;
+  justify-self: center;
+  color: var(--texto-cinza-medio);
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Fairplay Display";
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
 }
