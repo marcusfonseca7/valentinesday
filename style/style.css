@@ -194,20 +194,30 @@ hr {
 
 /* ------------------------------------ linha do tempo ------------------------------------ */
 
-.container-moments {
-  width: 85%;
-  justify-self: center;
-}
 
 .moments {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  flex-direction: column;
+  gap: 15px;
+  width: 85%;
+  justify-self: center;
 }
 
 .text-photo {
   display: flex;
   flex-direction: column;
+  border-left: var(--vermelho-escuro) 1px solid;
+  padding: 0 20px;
+  position: relative;
+  justify-self: center;
+}
+
+.dot {
+    color: var(--vermelho-vivo);
+    position: absolute;
+    left: -9px;
+    top: -13px;
+    font-size: 1.8rem;
 }
 
 .date-moment {
