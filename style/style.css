@@ -194,7 +194,6 @@ hr {
 
 /* ------------------------------------ linha do tempo ------------------------------------ */
 
-
 .moments {
   display: flex;
   flex-direction: column;
@@ -213,11 +212,11 @@ hr {
 }
 
 .dot {
-    color: var(--vermelho-vivo);
-    position: absolute;
-    left: -9px;
-    top: -13px;
-    font-size: 1.8rem;
+  color: var(--vermelho-vivo);
+  position: absolute;
+  left: -9px;
+  top: -13px;
+  font-size: 1.8rem;
 }
 
 .date-moment {
@@ -229,8 +228,15 @@ hr {
 
 .description-moment {
   margin: 5px 0 15px 0;
+  color: var(--texto-branco-suave);
 }
 
 .img-moment {
   width: 250px;
+}
+
+/* ------------------------------------ playlist ------------------------------------ */
+
+.iframe {
+  text-align: center;
 }
