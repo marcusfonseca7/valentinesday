@@ -148,6 +148,7 @@ h2 {
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;
   line-height: 25px;
+  font-style: italic;
 }
 
 .name-letter {
@@ -239,4 +240,26 @@ hr {
 
 .iframe {
   text-align: center;
+}
+
+/* ------------------------------------ rodapé ------------------------------------ */
+
+footer {
+    height: 70px;
+}
+
+h3 {
+    width: 60%;
+    justify-self: center;
+    color: var(--texto-cinza-medio);
+    font-size: .8rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Fairplay Display";
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+footer p {
+    text-align: center;
 }
