@@ -1,17 +1,9 @@
-const menuOptionLetter = document.getElementById("1");
-const textOptionLetter = document.getElementById("text-menu");
-
 const yearsDiv = document.getElementById("years")
 const monthsDiv = document.getElementById("months")
 const daysDiv = document.getElementById("days")
 const hoursDiv = document.getElementById("hours")
 const minutesDiv = document.getElementById("minutes")
 const secondsDiv = document.getElementById("seconds")
-
-function borderColor() {
-  menuOptionLetter.style.borderBottom = "2px solid var(--vermelho-principal)";
-  textOptionLetter.style.color = "var(--vermelho-principal)";
-}
 
 function timeTogether() {
   inicialDate = new Date(1701894601 * 1000)

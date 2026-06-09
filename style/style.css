@@ -30,7 +30,6 @@
 
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
-  position: relative;
 }
 
 html {
@@ -46,8 +45,11 @@ body {
 
 /* ------------------------------------ hero ------------------------------------ */
 
-h1 {
+.hero {
   margin-top: 50px;
+}
+
+h1 {
   margin-bottom: 10px;
   font-weight: 500;
   width: 50%;
@@ -106,13 +108,18 @@ h1 {
 
 /* ------------------------------------ menu ------------------------------------ */
 
+nav {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: var(--bg-card);
+  border-bottom: 2px solid var(--vermelho-escuro);
+}
+
 .menu {
   min-width: 100%;
   display: flex;
   list-style: none;
-  position: sticky;
-  z-index: 999;
-  
 }
 
 .menu li {
@@ -171,7 +178,7 @@ h2 {
 
 hr {
   width: 80%;
-  margin: 40px;
+  margin: 45px;
   justify-self: center;
   border: none;
   border-top: solid 1px var(--vermelho-escuro);
@@ -242,6 +249,8 @@ hr {
 .img-moment {
   width: 100%;
   max-width: 300px;
+  max-height: 148px;
+  object-fit: cover;
 }
 
 /* ------------------------------------ playlist ------------------------------------ */
