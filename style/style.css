@@ -44,6 +44,16 @@ body {
 }
 
 /* ------------------------------------ hero ------------------------------------ */
+.photos-page{
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  width: 45px;
+  rotate: 30deg;
+  opacity: 0.7;
+  z-index: -1;
+}
+
 
 .hero {
   margin-top: 50px;
@@ -71,17 +81,24 @@ h1 {
   letter-spacing: 2px;
 }
 
+.title-counter{
+  margin: 20px 0 5px 0;
+    text-align: center;
+  font-size: 0.6rem;
+  color: var(--texto-branco-suave);
+}
+
 .container-counter {
   display: flex;
   flex-direction: row;
   justify-self: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px 0;
   border-radius: 10px;
   border: var(--borda-card-timeline) solid 2px;
   background-color: var(--bg-principal);
   width: 95%;
+  margin-bottom: 20px;
 }
 
 .counter {
@@ -247,10 +264,11 @@ hr {
 }
 
 .img-moment {
-  width: 100%;
-  max-width: 300px;
-  max-height: 148px;
-  object-fit: cover;
+    width: 100%;
+    height: 220px;
+    max-width: 300px;
+    max-height: 220px;
+    object-fit: cover;
 }
 
 /* ------------------------------------ playlist ------------------------------------ */
