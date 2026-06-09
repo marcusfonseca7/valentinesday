@@ -30,6 +30,7 @@
 
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 html {
@@ -73,22 +74,21 @@ h1 {
   flex-direction: row;
   justify-self: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 20px 0;
   border-radius: 10px;
-  border: var(--borda-card-timeline) solid 1px;
+  border: var(--borda-card-timeline) solid 2px;
   background-color: var(--bg-principal);
+  width: 95%;
 }
 
 .counter {
-  padding: 5px 25px;
+  padding: 5px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.counter.months {
-  border-left: 1px solid var(--borda-card-timeline);
+  width: 16.666666666%;
   border-right: 1px solid var(--borda-card-timeline);
 }
 
@@ -103,10 +103,16 @@ h1 {
   text-align: center;
 }
 
+
+/* ------------------------------------ menu ------------------------------------ */
+
 .menu {
   min-width: 100%;
   display: flex;
   list-style: none;
+  position: sticky;
+  z-index: 999;
+  
 }
 
 .menu li {
