@@ -50,3 +50,36 @@ function timeTogether() {
 
 timeTogether()
 setInterval(timeTogether, 1000)
+
+// parte do menu para acender - jeito "bruto"
+
+const liLetter = document.getElementById("li-letter");
+const liPhotos = document.getElementById("li-photos");
+const liMoments = document.getElementById("li-moments");
+const liPlaylist = document.getElementById("li-playlist");
+
+const letterLink = document.getElementById("le");
+const photosLink = document.getElementById("ph");
+const momentsLink = document.getElementById("mo");
+const playlistLink = document.getElementById("pl");
+
+
+letterLink.addEventListener("click", () => {
+letterLink.style.color = "var(--vermelho-principal)"
+liLetter.style.borderBottom = "1px solid var(--vermelho-principal)"
+})
+
+photosLink.addEventListener("click", () => {
+photosLink.style.color = "var(--vermelho-principal)"
+liPhotos.style.borderBottom = "1px solid var(--vermelho-principal)"
+})
+
+momentsLink.addEventListener("click", () => {
+momentsLink.style.color = "var(--vermelho-principal)"
+liMoments.style.borderBottom = "1px solid var(--vermelho-principal)"
+})
+
+playlistLink.addEventListener("click", () => {
+playlistLink.style.color = "var(--vermelho-principal)"
+liPlaylist.style.borderBottom = "1px solid var(--vermelho-principal)"
+})
