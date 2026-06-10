@@ -44,16 +44,46 @@ body {
 }
 
 /* ------------------------------------ hero ------------------------------------ */
-.photos-page{
+.polaroids {
   position: absolute;
-  left: 25px;
-  top: 15px;
-  width: 45px;
-  rotate: 30deg;
-  opacity: 0.7;
+  width: 40px;
   z-index: -1;
+  opacity: 0.6;
 }
 
+.polaroids.baby {
+  left: 25px;
+  top: 15px;
+  rotate: 30deg;
+}
+
+.polaroids.ana-pink {
+  right: 25px;
+  top: 15px;
+  rotate: -20deg;
+  width: 45px;
+}
+
+.polaroids.library {
+  left: 16px;
+  top: 95px;
+  rotate: -40deg;
+}
+.polaroids.fairy {
+  right: 20px;
+  bottom: -15px;
+  rotate: -50deg;
+}
+.polaroids.mirror {
+  left: 40px;
+  bottom: -10px;
+  rotate: 20deg;
+}
+.polaroids.mirror-bath {
+  right: 70px;
+  bottom: -10px;
+  rotate: -10deg;
+}
 
 .hero {
   margin-top: 50px;
@@ -81,9 +111,9 @@ h1 {
   letter-spacing: 2px;
 }
 
-.title-counter{
+.title-counter {
   margin: 20px 0 5px 0;
-    text-align: center;
+  text-align: center;
   font-size: 0.6rem;
   color: var(--texto-branco-suave);
 }
@@ -122,7 +152,6 @@ h1 {
   text-align: center;
 }
 
-
 /* ------------------------------------ menu ------------------------------------ */
 
 nav {
@@ -160,6 +189,14 @@ h2 {
   letter-spacing: 4px;
   color: var(--texto-cinza-medio);
   font-weight: 400;
+}
+
+h2.reverse {
+  text-align: end;
+}
+
+.title-reverse {
+  position: relative;
 }
 
 .container-letter {
@@ -260,15 +297,15 @@ hr {
 .description-moment {
   margin: 5px 0 15px 0;
   color: var(--texto-branco-suave);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .img-moment {
-    width: 100%;
-    height: 220px;
-    max-width: 300px;
-    max-height: 220px;
-    object-fit: cover;
+  width: 100%;
+  height: 220px;
+  max-width: 300px;
+  max-height: 220px;
+  object-fit: cover;
 }
 
 /* ------------------------------------ playlist ------------------------------------ */
