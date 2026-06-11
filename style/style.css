@@ -173,12 +173,10 @@ nav {
   text-align: center;
 }
 
-.menu li.active {
+li.active {
   color: var(--vermelho-principal);
   border-bottom: 1px solid var(--vermelho-principal);
 }
-
-
 
 .menu a {
   color: var(--texto-cinza-medio);

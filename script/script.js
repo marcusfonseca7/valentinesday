@@ -107,25 +107,28 @@ playlistLink.addEventListener("click", () => {
 });
 
 const arrayPhotos = [
-  "img/carousel1.jpg",
+  "img/carousel1.jpeg",
   "img/carousel2.jpg",
   "img/carousel3.jpg",
   "img/carousel4.jpg",
   "img/carousel5.jpg",
   "img/carousel6.jpg",
   "img/carousel7.jpg",
+  "img/carousel8.jpg"
 ];
 
 let i = 0;
 
 function nextImage() {
-  photoCarousel.src = arrayPhotos[i + 1];
+  photoCarousel.src = arrayPhotos[i];
   i++;
 
-  if (i === arrayPhotos.length - 1) {
+  if (i >= arrayPhotos.length - 1) {
     i = 0;
   }
 }
+
+nextImage()
 
 nextImageArrow.addEventListener("click", nextImage);
 
