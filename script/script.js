@@ -70,19 +70,55 @@ const playlistLink = document.getElementById("pl");
 letterLink.addEventListener("click", () => {
 letterLink.style.color = "var(--vermelho-principal)"
 liLetter.style.borderBottom = "1px solid var(--vermelho-principal)"
+
+photosLink.style.color = "var(--texto-cinza-medio)"
+liPhotos.style.borderBottom = "1px solid var(--bg-card)"
+
+momentsLink.style.color = "var(--texto-cinza-medio)"
+liMoments.style.borderBottom = "1px solid var(--bg-card)"
+
+playlistLink.style.color = "var(--texto-cinza-medio)"
+liPlaylist.style.borderBottom = "1px solid var(--bg-card)"
 })
 
 photosLink.addEventListener("click", () => {
+letterLink.style.color = "var(--texto-cinza-medio)"
+liLetter.style.borderBottom = "1px solid var(--bg-card)"
+
 photosLink.style.color = "var(--vermelho-principal)"
 liPhotos.style.borderBottom = "1px solid var(--vermelho-principal)"
+
+momentsLink.style.color = "var(--texto-cinza-medio)"
+liMoments.style.borderBottom = "1px solid var(--bg-card)"
+
+playlistLink.style.color = "var(--texto-cinza-medio)"
+liPlaylist.style.borderBottom = "1px solid var(--bg-card)"
 })
 
 momentsLink.addEventListener("click", () => {
+letterLink.style.color = "var(--texto-cinza-medio)"
+liLetter.style.borderBottom = "1px solid var(--bg-card)"
+
+photosLink.style.color = "var(--texto-cinza-medio)"
+liPhotos.style.borderBottom = "1px solid var(--bg-card)"
+
 momentsLink.style.color = "var(--vermelho-principal)"
 liMoments.style.borderBottom = "1px solid var(--vermelho-principal)"
+
+playlistLink.style.color = "var(--texto-cinza-medio)"
+liPlaylist.style.borderBottom = "1px solid var(--bg-card)"
 })
 
 playlistLink.addEventListener("click", () => {
+letterLink.style.color = "var(--texto-cinza-medio)"
+liLetter.style.borderBottom = "1px solid var(--bg-card)"
+
+photosLink.style.color = "var(--texto-cinza-medio)"
+liPhotos.style.borderBottom = "1px solid var(--bg-card)"
+
+momentsLink.style.color = "var(--texto-cinza-medio)"
+liMoments.style.borderBottom = "1px solid var(--bg-card)"
+
 playlistLink.style.color = "var(--vermelho-principal)"
 liPlaylist.style.borderBottom = "1px solid var(--vermelho-principal)"
 })
