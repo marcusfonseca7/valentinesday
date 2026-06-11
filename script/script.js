@@ -5,9 +5,12 @@ const hoursDiv = document.getElementById("hours")
 const minutesDiv = document.getElementById("minutes")
 const secondsDiv = document.getElementById("seconds")
 
+const photoCarousel = document.getElementById("photo-carousel")
+const nextImageArrow = document.getElementById("next-image")
+const previousImageArrow = document.getElementById("previous-image")
+
 function timeTogether() {
   inicialDate = new Date(1701894601 * 1000)
-
 
   const dateNow = new Date()
 
@@ -83,3 +86,31 @@ playlistLink.addEventListener("click", () => {
 playlistLink.style.color = "var(--vermelho-principal)"
 liPlaylist.style.borderBottom = "1px solid var(--vermelho-principal)"
 })
+
+const arrayPhotos = ["img/carousel1.jpg", "img/carousel2.jpg", "img/carousel3.jpg", "img/carousel4.jpg", "img/carousel5.jpg", "img/carousel6.jpg", "img/carousel7.jpg"]
+
+let i = 0
+
+function nextImage() {
+    photoCarousel.src = arrayPhotos[i+1]
+    i++
+
+    if(i === arrayPhotos.length - 1) {
+        i = 0
+    }
+
+}
+
+nextImageArrow.addEventListener("click", nextImage)
+
+
+function previousImage() {
+    photoCarousel.src = arrayPhotos[i-1]
+    i--
+
+    if(i < 0) {
+        i = arrayPhotos.length - 1 
+    }
+}
+
+previousImageArrow.addEventListener("click", previousImage)

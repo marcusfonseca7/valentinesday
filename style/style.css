@@ -213,9 +213,13 @@ h2.reverse {
   text-wrap: wrap;
   margin: 20px 15px;
   font-family: "Playfair Display", serif;
-  letter-spacing: 1px;
-  line-height: 25px;
+  letter-spacing: 1.5px;
+  line-height: 22px;
   font-style: italic;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  word-break: break-word;
 }
 
 .name-letter {
@@ -249,15 +253,18 @@ hr {
   gap: 15px;
 }
 
-.container-photos img {
+.container-photos #photo-carousel {
   width: 250px;
+  height: 300px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .container-photos .seta {
   width: 15px;
   height: 30px;
   filter: invert(70%);
+  cursor: pointer;
 }
 
 /* ------------------------------------ linha do tempo ------------------------------------ */
