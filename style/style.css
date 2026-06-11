@@ -216,7 +216,7 @@ h2.reverse {
   border: solid 1px var(--bg-carta);
   border-radius: 10px;
   padding: 10px;
-  width: 85%;
+  width: 90%;
   justify-self: center;
   color: var(--texto-cinza-claro);
 }
@@ -238,6 +238,7 @@ h2.reverse {
   text-align: end;
   margin: 20px 15px;
   color: var(--texto-cinza-medio);
+  font-style: italic;
 }
 
 .name {
