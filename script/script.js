@@ -8,6 +8,7 @@ const secondsDiv = document.getElementById("seconds");
 const photoCarousel = document.getElementById("photo-carousel");
 const nextImageArrow = document.getElementById("next-image");
 const previousImageArrow = document.getElementById("previous-image");
+const photoIndex = document.getElementById("photos-index");
 
 function timeTogether() {
   inicialDate = new Date(1701894601 * 1000);
@@ -114,30 +115,43 @@ const arrayPhotos = [
   "img/carousel5.jpg",
   "img/carousel6.jpg",
   "img/carousel7.jpg",
-  "img/carousel8.jpg"
+  "img/carousel8.jpg",
 ];
 
 let i = 0;
+let j = 0;
 
 function nextImage() {
   photoCarousel.src = arrayPhotos[i];
   i++;
 
-  if (i >= arrayPhotos.length - 1) {
+  if (i >= arrayPhotos.length) {
     i = 0;
+  }
+
+  photoIndex.textContent = j + 1;
+  j++;
+  if (j >= arrayPhotos.length) {
+    j = 0;
   }
 }
 
-nextImage()
+nextImage();
 
 nextImageArrow.addEventListener("click", nextImage);
 
 function previousImage() {
-  photoCarousel.src = arrayPhotos[i - 1];
-  i--;
+    photoCarousel.src = arrayPhotos[i - 1];
+    i--;
 
-  if (i < 0) {
-    i = arrayPhotos.length - 1;
+  if (i <= 0) {
+    i = arrayPhotos.length;
+  }
+
+  photoIndex.textContent = j;
+  j--;
+  if (j <= 0) {
+    j = arrayPhotos.length;
   }
 }
 

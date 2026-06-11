@@ -80,9 +80,16 @@ body {
   rotate: 20deg;
 }
 .polaroids.mirror-bath {
-  right: 70px;
+  right: 30px;
   bottom: -10px;
   rotate: -10deg;
+}
+
+.polaroids.pianist {
+  right: 90px;
+  bottom: -10px;
+  rotate: 5deg;
+  width: 30px;
 }
 
 .hero {
@@ -270,6 +277,14 @@ hr {
   height: 30px;
   filter: invert(70%);
   cursor: pointer;
+}
+
+.photos-index {
+  text-align: center;
+  margin-top: 8px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.1rem;
+
 }
 
 /* ------------------------------------ linha do tempo ------------------------------------ */
