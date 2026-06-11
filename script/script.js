@@ -1,58 +1,55 @@
-const yearsDiv = document.getElementById("years")
-const monthsDiv = document.getElementById("months")
-const daysDiv = document.getElementById("days")
-const hoursDiv = document.getElementById("hours")
-const minutesDiv = document.getElementById("minutes")
-const secondsDiv = document.getElementById("seconds")
+const yearsDiv = document.getElementById("years");
+const monthsDiv = document.getElementById("months");
+const daysDiv = document.getElementById("days");
+const hoursDiv = document.getElementById("hours");
+const minutesDiv = document.getElementById("minutes");
+const secondsDiv = document.getElementById("seconds");
 
-const photoCarousel = document.getElementById("photo-carousel")
-const nextImageArrow = document.getElementById("next-image")
-const previousImageArrow = document.getElementById("previous-image")
+const photoCarousel = document.getElementById("photo-carousel");
+const nextImageArrow = document.getElementById("next-image");
+const previousImageArrow = document.getElementById("previous-image");
 
 function timeTogether() {
-  inicialDate = new Date(1701894601 * 1000)
+  inicialDate = new Date(1701894601 * 1000);
 
-  const dateNow = new Date()
+  const dateNow = new Date();
 
-  differenceDate = dateNow - inicialDate
+  differenceDate = dateNow - inicialDate;
 
-  let seconds = Math.floor(differenceDate / 1000)
-  let minutes = Math.floor(differenceDate / (1000 * 60))
-  let hours = Math.floor(differenceDate / (1000 * 60 * 60))
-  
-  let days = dateNow.getDate() - inicialDate.getDate()
-  let months = dateNow.getMonth() - inicialDate.getMonth()
-  let years = dateNow.getFullYear() - inicialDate.getFullYear()
+  let seconds = Math.floor(differenceDate / 1000);
+  let minutes = Math.floor(differenceDate / (1000 * 60));
+  let hours = Math.floor(differenceDate / (1000 * 60 * 60));
+
+  let days = dateNow.getDate() - inicialDate.getDate();
+  let months = dateNow.getMonth() - inicialDate.getMonth();
+  let years = dateNow.getFullYear() - inicialDate.getFullYear();
 
   if (days < 0) {
-        months--;
-        const lastMonth = new Date(
-            dateNow.getFullYear(),
-            dateNow.getMonth(),
-            0
-        ).getDate();
+    months--;
+    const lastMonth = new Date(
+      dateNow.getFullYear(),
+      dateNow.getMonth(),
+      0,
+    ).getDate();
 
-        days += lastMonth;
-    }
+    days += lastMonth;
+  }
 
-    if (months < 0) {
-        years--;
-        months += 12;
-    }
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
 
-
-  secondsDiv.textContent = `${seconds % 60}`
-  minutesDiv.textContent = `${minutes % 60}`
-  hoursDiv.textContent = `${hours % 24}`
-  daysDiv.textContent = `${days}`
-  monthsDiv.textContent = `${months}`
-  yearsDiv.textContent = `${years}`
-
-
+  secondsDiv.textContent = `${seconds % 60}`;
+  minutesDiv.textContent = `${minutes % 60}`;
+  hoursDiv.textContent = `${hours % 24}`;
+  daysDiv.textContent = `${days}`;
+  monthsDiv.textContent = `${months}`;
+  yearsDiv.textContent = `${years}`;
 }
 
-timeTogether()
-setInterval(timeTogether, 1000)
+timeTogether();
+setInterval(timeTogether, 1000);
 
 // parte do menu para acender - jeito "bruto"
 
@@ -66,87 +63,79 @@ const photosLink = document.getElementById("ph");
 const momentsLink = document.getElementById("mo");
 const playlistLink = document.getElementById("pl");
 
+// REFATORAR - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function cleanColors() {
+  letterLink.style.color = "var(--texto-cinza-medio)";
+  liLetter.style.borderBottom = "1px solid var(--bg-card)";
+
+  photosLink.style.color = "var(--texto-cinza-medio)";
+  liPhotos.style.borderBottom = "1px solid var(--bg-card)";
+
+  momentsLink.style.color = "var(--texto-cinza-medio)";
+  liMoments.style.borderBottom = "1px solid var(--bg-card)";
+
+  playlistLink.style.color = "var(--texto-cinza-medio)";
+  liPlaylist.style.borderBottom = "1px solid var(--bg-card)";
+}
 
 letterLink.addEventListener("click", () => {
-letterLink.style.color = "var(--vermelho-principal)"
-liLetter.style.borderBottom = "1px solid var(--vermelho-principal)"
-
-photosLink.style.color = "var(--texto-cinza-medio)"
-liPhotos.style.borderBottom = "1px solid var(--bg-card)"
-
-momentsLink.style.color = "var(--texto-cinza-medio)"
-liMoments.style.borderBottom = "1px solid var(--bg-card)"
-
-playlistLink.style.color = "var(--texto-cinza-medio)"
-liPlaylist.style.borderBottom = "1px solid var(--bg-card)"
-})
+  cleanColors();
+  letterLink.style.color = "var(--vermelho-principal)";
+  liLetter.style.borderBottom = "1px solid var(--vermelho-principal)";
+});
 
 photosLink.addEventListener("click", () => {
-letterLink.style.color = "var(--texto-cinza-medio)"
-liLetter.style.borderBottom = "1px solid var(--bg-card)"
+  cleanColors();
 
-photosLink.style.color = "var(--vermelho-principal)"
-liPhotos.style.borderBottom = "1px solid var(--vermelho-principal)"
-
-momentsLink.style.color = "var(--texto-cinza-medio)"
-liMoments.style.borderBottom = "1px solid var(--bg-card)"
-
-playlistLink.style.color = "var(--texto-cinza-medio)"
-liPlaylist.style.borderBottom = "1px solid var(--bg-card)"
-})
+  photosLink.style.color = "var(--vermelho-principal)";
+  liPhotos.style.borderBottom = "1px solid var(--vermelho-principal)";
+});
 
 momentsLink.addEventListener("click", () => {
-letterLink.style.color = "var(--texto-cinza-medio)"
-liLetter.style.borderBottom = "1px solid var(--bg-card)"
+  cleanColors();
 
-photosLink.style.color = "var(--texto-cinza-medio)"
-liPhotos.style.borderBottom = "1px solid var(--bg-card)"
-
-momentsLink.style.color = "var(--vermelho-principal)"
-liMoments.style.borderBottom = "1px solid var(--vermelho-principal)"
-
-playlistLink.style.color = "var(--texto-cinza-medio)"
-liPlaylist.style.borderBottom = "1px solid var(--bg-card)"
-})
+  momentsLink.style.color = "var(--vermelho-principal)";
+  liMoments.style.borderBottom = "1px solid var(--vermelho-principal)";
+});
 
 playlistLink.addEventListener("click", () => {
-letterLink.style.color = "var(--texto-cinza-medio)"
-liLetter.style.borderBottom = "1px solid var(--bg-card)"
+  cleanColors();
 
-photosLink.style.color = "var(--texto-cinza-medio)"
-liPhotos.style.borderBottom = "1px solid var(--bg-card)"
+  playlistLink.style.color = "var(--vermelho-principal)";
+  liPlaylist.style.borderBottom = "1px solid var(--vermelho-principal)";
+});
 
-momentsLink.style.color = "var(--texto-cinza-medio)"
-liMoments.style.borderBottom = "1px solid var(--bg-card)"
+const arrayPhotos = [
+  "img/carousel1.jpg",
+  "img/carousel2.jpg",
+  "img/carousel3.jpg",
+  "img/carousel4.jpg",
+  "img/carousel5.jpg",
+  "img/carousel6.jpg",
+  "img/carousel7.jpg",
+];
 
-playlistLink.style.color = "var(--vermelho-principal)"
-liPlaylist.style.borderBottom = "1px solid var(--vermelho-principal)"
-})
-
-const arrayPhotos = ["img/carousel1.jpg", "img/carousel2.jpg", "img/carousel3.jpg", "img/carousel4.jpg", "img/carousel5.jpg", "img/carousel6.jpg", "img/carousel7.jpg"]
-
-let i = 0
+let i = 0;
 
 function nextImage() {
-    photoCarousel.src = arrayPhotos[i+1]
-    i++
+  photoCarousel.src = arrayPhotos[i + 1];
+  i++;
 
-    if(i === arrayPhotos.length - 1) {
-        i = 0
-    }
-
+  if (i === arrayPhotos.length - 1) {
+    i = 0;
+  }
 }
 
-nextImageArrow.addEventListener("click", nextImage)
-
+nextImageArrow.addEventListener("click", nextImage);
 
 function previousImage() {
-    photoCarousel.src = arrayPhotos[i-1]
-    i--
+  photoCarousel.src = arrayPhotos[i - 1];
+  i--;
 
-    if(i < 0) {
-        i = arrayPhotos.length - 1 
-    }
+  if (i < 0) {
+    i = arrayPhotos.length - 1;
+  }
 }
 
-previousImageArrow.addEventListener("click", previousImage)
+previousImageArrow.addEventListener("click", previousImage);
